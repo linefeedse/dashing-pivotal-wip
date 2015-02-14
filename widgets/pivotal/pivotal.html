@@ -1,0 +1,30 @@
+<h1>
+<span class="title" data-bind="title"></span>
+<span data-bind="project_name"></span>
+</h1>
+ 
+<div id="pivotal_stories">
+<div class="stats_row">
+
+<!--<div class="started_container container">
+<div class="section_title"><span data-bind="started"></span> Started</div>
+</div>
+
+<div class="finished_container container">
+<div class="section_title"><span data-bind="finished"></span> Finished</div>
+</div>
+-->
+
+<div class="started_container container">
+Started (max <span data-bind="started_max"></span>)<br>
+<input class="smeter" data-angleOffset=-125 data-angleArc=250 data-width=150 data-readOnly=true data-bind-value="started | shortenedNumber" data-bind-data-min="min" data-bind-data-max="started_max"></div>
+<div class="finished_container container">
+Finished (max <span data-bind="finished_max"></span>)<br>
+<input class="fmeter" data-angleOffset=-125 data-angleArc=250 data-width=150 data-readOnly=true data-bind-value="finished | shortenedNumber" data-bind-data-min="min" data-bind-data-max="finished_max">
+</div>
+</div> 
+ 
+</div>
+<div style="clear:both;"></div>
+ 
+</div>
